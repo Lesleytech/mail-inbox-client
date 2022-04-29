@@ -21,7 +21,7 @@ const MessageScene: FC = () => {
   if (error || !message) {
     return (
       <div className='container text-center'>
-        <p>{error}</p>
+        <p>{error || 'Message not found'}</p>
         <button onClick={refetch}>Try again</button>
       </div>
     );
