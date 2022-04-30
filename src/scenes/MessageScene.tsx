@@ -29,14 +29,8 @@ const MessageScene: FC = () => {
 
   return (
     <div className='message container'>
-      {loading ? (
-        <small>Loading...</small>
-      ) : (
-        <>
-          <h1>{message?.subject}</h1>
-          <p>{message?.content}</p>
-        </>
-      )}
+      <h1>{message?.subject}</h1>
+      <p>{message?.content}</p>
     </div>
   );
 };
